@@ -13,7 +13,7 @@ std::cin >> num;
 system("cls");
 
 double root = num / 2;
-double eps = 0.01;
+double eps = 0.001;
 int iter = 0;
 
 while (0.5 * (root - num / root) > eps)
