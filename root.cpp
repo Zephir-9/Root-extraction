@@ -5,21 +5,21 @@
 
 int main()
 {setlocale(LC_ALL, "RUS");
-double numeric = NULL;
+double num = NULL;
 
 std::cout << "Введите число: ";
-std::cin >> numeric;
+std::cin >> num;
 
 system("cls");
 
-double root = numeric / 2;
+double root = num / 2;
 double eps = 0.01;
 int iter = 0;
 
-while (0.5 * (root - numeric / root) > eps)
+while (0.5 * (root - num / root) > eps)
 {
 	iter++;
-	root = 0.5 * (root + numeric / root);
+	root = 0.5 * (root + num / root);
 	
 }
     std::cout << "Корень: " << root << '\n';
